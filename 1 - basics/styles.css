@@ -10,11 +10,16 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px 200px;
   gap: 1rem;
+  justify-items: stretch;
 }
 
 .grid-container > div {
   background: #ccc;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #777;
 }
 .grid-container > div:nth-child(1) {
   grid-column: 1 / span 2;
